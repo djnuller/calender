@@ -2,9 +2,10 @@ package main
 
 import (
 	"calender/config"
+	"calender/config/route"
 	"fmt"
 	"log"
-	"os"
+	"net/http"
 )
 
 func main() {
@@ -12,6 +13,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("Config loaded")
-	fmt.Println(os.Getenv("mongouri"))
+	fmt.Println("Environment loaded...")
+	log.Fatal(http.ListenAndServe(":8080", route.Routes()))
 }

@@ -10,4 +10,5 @@ type User struct {
 	UserName  string             `json:"userName" bson:"userName"`
 	Password  string             `json:"password" bson:"password"`
 	Friends   string             `json:"friends" bson:"friends"`
+	Token     string             `json:"token"`
 }
