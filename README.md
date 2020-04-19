@@ -2,6 +2,7 @@
 
 ## Environment
 In the root folder of the project, place a .env file containing:
+```
 mongouri="mongodb://mongouri"
 database="CalenderApi"
 userTable="users"
@@ -9,6 +10,7 @@ taskTable="tasks"
 pendingTable="pending"
 eventTable="events"
 access_secret="supersecret"
+```
 
 ## User routes
 | Method        | Endpoint         | Description  |
